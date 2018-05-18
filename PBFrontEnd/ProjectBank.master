@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ProjectBank.master.cs" Inherits="ProjectBank" %>
+
+<!DOCTYPE html>
+
+<%--<html>--%>
+    <head id="Head1" runat="server">
+        <!-- Website title -->
+        <title></title>
+        <!-- link to styling -->
+        <link href="css/ProjectBank.css" rel="stylesheet" type="text/css" />
+        <!-- link to access.js -->
+        <script src="js/access.js"></script>
+        <!-- link to fav icon image -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <form id="form1" runat="server">
+             <!-- website heaser -->
+             <header>
+                 <div id="logo">
+                     <a href="Default.aspx"><img src="media/logo.png" alt="logo" /></a>
+                 </div>
+                 <!-- website main navigation -->
+                <nav class="mainNav">
+                    <ul>
+                        <a href="Default.aspx"><li>Home</li></a>
+                        <a href="ClientManagement.aspx"><li>Client</li></a>
+                        <a href="CompanyManagement.aspx"><li>Company</li></a>
+                        <a href="StaffManagement.aspx"><li>Staff</li></a>
+                        <a href="AppointmentManagement.aspx"><li>Appointments</li></a>
+                        <a href="#"><li>Projects</li></a>
+                    </ul>
+                </nav>
+                 <!-- accessability options for users -->
+                 <div id="fontActive">
+                     <button onclick="fontSmaller()" id="smaller">A</button>
+                     <button onclick="fontReset()" id="medium">A</button>
+                     <button onclick="fontLarger()" id="larger">A</button>
+                 </div>
+            </header>
+
+            <!-- dynamic main content of page -->
+            <main class="content"> 
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+
+            <!-- static website footer -->
+            <footer>
+                <article id="siteMap">
+                    <table>
+                        <tr class="tableHead">
+                            <td>Home</td>
+                            <td>Clients</td>
+                            <td>Company</td>
+                            <td>Appointments</td>
+                            <td>Staff</td>
+                            <td>Projects</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Client Management</td>
+                            <td>Company Management</td>
+                            <td>Appointment Management</td>
+                            <td><a href="StaffManagement.aspx">Staff Management</a></td>
+                            <td>Project Management</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Add Client</td>
+                            <td>Add Company</td>
+                            <td>Add Appointment</td>
+                            <td><a href="AddStaff.aspx">Add Staff</a></td>
+                            <td>Add Project</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Edit Client</td>
+                            <td>Edit Company</td>
+                            <td>Edit Appointment</td>
+                            <td><a href="EditStaff.aspx">Edit Staff</a></td>
+                            <td>Edit Project</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Archived Clients</td>
+                            <td>Archived Companys</td>
+                            <td>Archived Appointments</td>
+                            <td><a href="ArchiveStaff.aspx">Archived Staff</a></td>
+                            <td>Archived Projects</td>
+                        </tr>
+                    </table>
+                </article>   
+                <article id="mediaLinks">
+                    <ul>
+                        <li>
+                            <img src="media/socialMedia/faceb.png" alt="FaceBook" /></li>
+                        <li>
+                            <img src="media/socialMedia/twit.png" alt="Twitter" /></li>
+                        <li>
+                            <img src="media/socialMedia/link.png" alt="LinkedIn" /></li>
+                        <li>
+                            <img src="media/socialMedia/pin.png" alt="Pintrest" /></li>
+                        <li>
+                            <img src="media/socialMedia/yt.png" alt="YouTube" /></li>
+                    </ul>
+                </article>
+            </footer>
+        </form>
+    </body>
+</html>

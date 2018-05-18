@@ -1,0 +1,583 @@
+﻿/* Project Bank CSS */
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Reset padding and margins */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #24313D;
+}
+
+header {
+    width: 100%;
+    background-color: #18242E;
+    top: 0;
+	height: 100px;
+    color: #E3E8EB;
+}
+
+#logo {
+    float: left;
+    width: 100px;
+    height: 100%;
+    margin-left: 5%;
+    display: flex;
+}
+#logo img {
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.mainNav {
+    display: flex;
+    float: right;
+    height: 25px;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 2%;
+    justify-content: center
+
+}
+.mainNav ul {
+    display:inline-flex;
+    justify-content: center;
+    color: #E3E8EB;
+    list-style: none;
+    width: 100%;
+}
+.mainNav a {
+    text-align: center;
+    color: #E3E8EB;
+    width: 100%;
+    text-decoration: none;
+}
+.mainNav a:hover {
+    border-bottom: 1px solid #E6494D;
+}
+
+.button {
+    font-size: medium;
+    padding-top: 5px;
+    background-color:#18242E;
+    text-align: center;
+    height: 50px;
+    border: 1px solid #E6494D;
+    width: 100%;
+    color: #dedede;
+    text-decoration: none;
+}
+
+
+
+button.button {
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button.button:active {
+    background-color: #E6494D;
+}
+a.button {
+    line-height: 50px;
+}
+a.button:active {
+    background-color: #E6494D;
+}
+
+input.button {
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input.button:active {
+    background-color: #E6494D;
+}
+select.button {
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#searchButton {
+    width: 10%;
+}
+
+
+
+/* Styling for the 1st, 2nd, 3rd item in the fontActive list */
+#fontActive {
+    color: #E3E8EB;
+    display:inline-flex;
+    justify-content: flex-end;
+    color: #E3E8EB;
+    list-style: none;
+    width: 100%;
+    height: 22%;
+    padding-top: 1%;
+}
+#fontActive button {
+    width: 1%;
+}
+#smaller {
+    font-size: smaller;
+    margin-right: 0.5%;
+}
+#medium {
+    font-size:medium;
+    margin-right: 0.5%;
+}
+#larger {
+    font-size: larger;
+    margin-right: 1%;
+}
+
+/* Styling for main content section */
+
+.content {
+    height: 900px;
+    color: #E3E8EB;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+/* Styling for static footer section */
+footer {
+    background-color: #18242E;
+    height:500px;
+    color: #E3E8EB;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#siteMap {
+    width: 100%;
+    height: 250px;
+}
+#siteMap table {
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+#siteMap a {
+    text-decoration: none;
+    color: aqua;
+}
+#mediaLinks {
+    float: right;
+    height: 50px;
+    width: 250px;
+}
+#mediaLinks ul {
+    list-style: none;
+    display: inline-flex;
+}
+#mediaLinks img {
+    height: 50px;
+    width: 50px;
+}
+
+
+/* This section is the styling for the Homepage or 'Default.aspx */
+
+.hero {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+.hero table {
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 10%;
+    width: 100%;
+    height: 40%;
+}
+.hero img {
+    height: 100px;
+    width: 100px;
+}
+.hero h1, h4 {
+    margin-top: 5%;
+}
+.services {
+    width: 100%;
+    height: 400px;
+    padding-top: 50px;
+    display: flex;
+}
+.serviceSection {
+    display: inline-block;
+    width: 33.33%;
+
+    justify-content: center;
+}
+.serviceSection table {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid #dedede;
+}
+.serviceSection img {
+    width: 50px;
+    height: 50px;
+}
+#lastTableBorder table {
+    border-right: none;
+}
+
+
+
+
+/***
+
+    This section is ther styling for the StaffManagement.aspx Page
+
+***/
+
+.container {
+    width: 100%;
+    height: 70%;
+    margin-top: 1%;
+    display: inline-flex;
+    justify-content:space-between;
+}
+
+.return {
+    width: 50px;
+    height: 30px;
+    float: left;
+    margin-top: 2%;
+}
+.return p, span {
+    font-size:100%;
+    line-height: 10px;
+    color: #E6494D;
+}
+
+.Options {
+    display: flex;
+    flex-direction:column;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    width: 15%;
+    margin-left: 2%;    
+}
+
+.OptionsApp {
+    display: flex;
+    flex-direction:column;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width: 15%;
+    margin-left: 2%;   
+    height: 100%; 
+}
+
+/*added AppointmentsCalender style*/
+#calBookingDate {
+    padding-bottom: 10px; 
+}
+
+
+.StaffList {
+    width: 80%;
+    height: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.tableHead {
+    font-size: larger;
+    font-weight: 200;
+    height: 50px;
+    color: #E6494D;
+    text-align: center;
+}
+.StaffList td {
+    width: 5%;
+    border-bottom: 1px solid #dedede;
+    height: 30px;
+}
+.StaffList tr:hover {
+    color: #E6494D;
+}
+
+.allStaff {
+    text-align: center;
+}
+#FuzSearch {
+    width: 30%;
+    height: 50px;
+}
+
+/* This section is for the AddStaff.aspx page */
+
+
+#AddStaffID {
+    width: 20%;
+    text-align: center;
+}
+
+.AddResults {
+    float: right;
+    width: 65%;
+    padding-top: 10%;
+}
+.AddResultsTable {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.AddResultsTable td {
+    border-bottom: 1px solid #dedede;
+    height: 30px;
+}
+
+#selectPosition {
+    height: 50px;
+}
+
+/* This section is for the Archived Staff page */
+
+#ReinstateButton {
+    background-color: #004c00
+}
+#deleteButton {
+    background-color: #660000
+}
+
+
+/***
+ 
+     This section is the styling for the CompanyManagement Pages
+ 
+ ***/
+ /*.Container4Company has been refered to every company page*/
+ .container4Company {
+     width: 100%;
+     height: 70%;
+     margin-top: 1%;
+     display: inline-flex;
+     justify-content: space-between;
+ }
+ /*.Options4Company has been refered to every company page*/
+ .Options4Company {
+     display: flex;
+     flex-direction: column;
+     margin-top: 130px;
+     float: right;
+     width: 25%;
+     margin-left: 1%;
+ }
+ /*.CompanyList has been refered to companyManagement, editCompany,  addCompany, */
+ .CompanyList {
+     margin-left: 60px;
+     width: 80%;
+ }
+ 
+ .CompanyList td {
+     margin-right: 2%;
+     border-bottom: 1px solid #dedede;
+     width: 180px;
+ }
+ 
+ .CompanyList tr:hover {
+     color: #E6494D;
+ }
+
+ /*.CompanyList has been refered to all other company page excluding the pages mentioned above*/
+ .CompanyList1 {
+     margin-left: 200px;
+     float: right; 
+     width: 80%;   
+ }
+ .CompanyList1 td {
+     border-bottom: 1px solid #dedede;
+     width: 180px;
+ }
+ 
+ .CompanyList1 tr:hover {
+     color: #E6494D;
+ }
+ 
+ /*.tableHead4Company has been refered to every company page*/
+ .tableHead4Company {
+     margin: 5%;
+     font-size: larger;
+     font-weight: 200;
+     height: 50px;
+     color: #E6494D;
+     text-align: center;
+ }
+ /*Only referenced in CompanyMangement.aspx*/
+ .allCompanies {
+     text-align: center;
+ }
+
+ /*Referenced in companyManagement, viewArchivedCompany */
+ #FuzSearch4Company {
+     margin-bottom: 5%;
+     width: 30%;
+     height: 50px;
+     margin-left: auto;
+ }
+
+  /*Referenced in companyManagement, viewArchivedCompany */
+ #searchButton4Company {
+     width: 12%;
+     height: 9%;
+ }
+
+  /*Referenced in companyManagement, viewArchivedCompany */
+ #searchButton4Company:hover {
+     background-color: black;
+     font-weight: bolder;    
+ }
+
+ /*JavaScript button coloring*/
+ #ArchiveButton {
+     background-color: #e50000;
+ }
+
+ /*Used for companyManagement, and view archived company*/
+ #title {
+     float: right;
+     margin-top: 2%;
+     font-weight: 600;
+ }
+ 
+ /*used for all over other pages excluding the pages mentioned above*/
+ #title1 {
+     margin-top: 65px;
+     float: right;
+     font-weight: 600;
+ }
+ 
+ /* This section is for the AddCompany.aspx / EditCompany.aspx and ViewCompany.aspx page */
+ 
+ /*Aligns the company table*/
+ #AddCompanyID {
+     width: 20%;
+     text-align: center;
+ }
+ /*Referenced in all pages*/
+ .AddResults4Company {
+     float: right;
+     width: 65%;
+     padding-top: 10%;
+ }
+ /*Referenced in all pages*/
+ .AddResultsTable4Company {
+     width: 100%;
+     justify-content: center;
+     text-align: center;
+ }
+ /*Referenced in all pages*/
+ .AddResultsTable4Company td {
+     border-bottom: 1px solid #dedede;
+     height: 30px;
+ }
+ /*Styling and layout for buttons Submit and exit on AddCompany and editCompany*/
+ .CompanyOnClickButtons {
+     display: inline;
+     margin-left: 1%;
+     /*Tried to apply amargin-top to both buttons here but doesn't work, so it was plaed in "submitbutton" as it works there*/
+ }
+ 
+ #submitButton4Company {
+     width: 10%;
+     background-color: #004c00;
+     border-radius: 5%;
+ }
+ 
+ #exitButton4Company {
+     width: 10%;
+     margin-top: 8%; /*repositions both buttons including The SUBMIT Button*/
+     margin-left: 2.25%; /* Seperate the button from each other*/
+     background-color: #09abe0;
+     border-radius: 5%;
+ }
+ /*End for Add and edit Company Buttons*/
+ 
+ /*Styling and layout for ViewCompany.aspx*/
+ .CompanyOnClickButtons1 {
+     position: relative;
+     bottom: 54.5%;
+     display: inline;
+     margin-left: 1%;
+ }
+ 
+ #exitButton4Company1 {
+     width: 10%;
+     margin-left: 2%;
+     background-color: #09abe0;
+     border-radius: 5%;
+ }
+ /*End of styling and layout for ViewCompany.aspx*/
+ 
+ /*Styling and Layout for ViewArchivedCompany.aspx */
+ /*This div class holds the layout for all buttons on the page */
+ .CompanyOnClickButtons2 {
+     position: absolute;
+     top: 40%;
+     left: 17%;
+     margin-left: 1%;
+     width: 10%;
+     height: 40%;
+ }
+ 
+ /*View ArchivedCompany.aspx buttons*/
+ #OptionButton4Company {
+     width: 70%;
+     background-color: #004c00;
+     border-radius: 5%;
+ }
+ 
+ #exitButton4Company3 {
+     width: 70%;
+     background-color: #09abe0;
+     border-radius: 5%;
+ }
+
+  /*Styling and Layout for ViewArchivedCompany.aspx */
+ /*This div class holds the layout for all buttons on the page */
+ .CompanyOnClickButtons3 {
+     position: absolute;
+     top: 38.5%;
+     left: 17%;
+     margin-left: 1%;
+     width: 10%;
+     height: 40%;
+ }
+ 
+
+  /*DeleteRestoreCompany.aspx buttons*/
+ #ReinstateButton4Company {
+     width: 70%;
+     background-color: #004c00;
+     border-radius: 5%;
+ }
+ 
+ #DeleteButton4Company {
+     width: 70%;
+     background-color: #e50000;
+     border-radius: 5%;
+ }
+ 
+ #exitButton4Company2 {
+     width: 70%;
+     background-color: #09abe0;
+     border-radius: 5%;
+ }
+ 
+ /***
+ 
+     End of styling for CompanyManagement Pages
+     
+ ***/
